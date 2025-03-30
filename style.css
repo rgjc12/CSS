@@ -1,0 +1,624 @@
+@font-face{
+    font-family: a1;
+    src:url(./Fonts/a1.woff2);
+  }
+  @font-face{
+    font-family: dis;
+    src:url(./Fonts/dis.woff2);
+  }
+  @font-face{
+    font-family: dis1;
+    src:url(./Fonts/dis1.woff2);
+  }
+  @font-face{
+    font-family: dis2;
+    src:url(./Fonts/dis2.woff2);
+  }
+  @font-face{
+    font-family: dis3;
+    src:url(./Fonts/dis3.woff2);
+  }
+  @font-face{
+    font-family: dis4;
+    src:url(./Fonts/dis4.woff2);
+  }  
+  @font-face{
+    font-family: a2;
+    src:url(./Fonts/a2.woff2);
+  }
+  @font-face{
+    font-family: a3;
+    src:url(./Fonts/a3.woff2);
+  }
+  @font-face{
+    font-family: a4;
+    src:url(./Fonts/a4.otf);
+  }
+  @font-face{
+    font-family: ab;
+    src:url(./Fonts/ab.woff2);
+  }
+  @font-face{
+    font-family: pb;
+    src:url(./Fonts/pb.otf);
+  }
+  @font-face{
+    font-family: peb;
+    src:url(./Fonts/peb.otf);
+  }
+  @font-face{
+    font-family: pel;
+    src:url(./Fonts/pel.otf);
+  }
+  @font-face{
+    font-family: pl;
+    src:url(./Fonts/pl.otf);
+  }
+  @font-face{
+    font-family: pm;
+    src:url(./Fonts/pm.otf);
+  }
+  @font-face{
+    font-family: pp;
+    src:url(./Fonts/ppmori.woff2);
+  }
+  @font-face{
+    font-family: pr;
+    src:url(./Fonts/pr.otf);
+  }
+   @font-face{
+    font-family: q1;
+    src:url(./Fonts/q1.woff2);
+  }
+  @font-face{
+    font-family: sc;
+    src:url(./Fonts/sc.woff);
+  }
+  @font-face{
+    font-family: ss;
+    src:url(./Fonts/ss.ttf);
+  }
+  @font-face{
+    font-family: sg;
+    src:url(./Fonts/sg.woff2);
+  }
+  @font-face{
+    font-family: x1;
+    src:url(./Fonts/x1.ttf);
+  }
+  @font-face{
+    font-family: y1;
+    src:url(./Fonts/y1.woff2);
+  }
+  @font-face{
+    font-family: z1;
+    src:url(./Fonts/z1.woff2);
+  }
+  body{
+    margin:0;
+    padding:0;
+  }
+  #discord-main{
+    height:100vh;
+    width:100vw;
+    background-color: #48224B;
+  }
+  #discord-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #head-l{
+    margin-left:20vw;
+    color:rgb(181, 178, 178);    
+    font-size: 1.5vw;
+    width:7vw;   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    
+  }
+  #head-l i:hover{
+    cursor: pointer;
+    color:whitesmoke;
+    font-size: 1.65vw;
+    transition: 0.2s;
+    background-color: #765578;
+    border-radius: 5px;
+    padding: 0.15vw;
+  }
+  #search-bar {
+    width: 42vw;
+    color: whitesmoke;
+}
+
+.search-container {
+    width: 38vw;
+    background-color: #765578;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 4.5vh;
+    color: whitesmoke;
+    position: relative;
+    margin-left:-4vw;
+}
+
+.search-container i {
+    font-size: 1.2vw;
+    color: whitesmoke;  /* Icon color */
+    margin-right: 10px;
+    font-size: 1.5vw;
+}
+
+#search-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: whitesmoke;  /* Text color */
+    font-size: 1vw;
+    font-family: dis1;
+}
+
+#search-input::placeholder {
+    color: whitesmoke;  /* Placeholder color */
+    opacity: 0.7;
+    font-family: dis1;
+}
+
+
+  #discord-box{
+    height:92vh;
+    width:95vw;
+    border-radius: 8px;
+    background-color: #59365E;
+    position: absolute;
+    bottom:0.5vw;
+    right:0.5vw;
+    overflow:hidden;
+    display: flex;
+  }
+#head-r{
+    width:20vw;
+    height:6.5vh;    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    font-family: dis2;
+    font-weight: 300;    
+}
+#header-box {
+  font-size: 1vw;
+  height: 4.5vh;
+  width: 15vw;
+  padding: 0.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-family: dis2;
+  font-weight: 300;
+  border: 1px solid #7f4f82;
+  gap: 0vw;  /* Default gap */
+  transition: background-color 0.4s ease, gap 0.25s ease-in-out;
+}
+
+#header-box img {
+  height: 4vh;
+  width: 6vh;
+  clip-path: circle(40%);
+}
+
+#header-box:hover {
+  cursor: pointer;
+  background-color: #7f4f82;
+  gap: 0.55vw; 
+}
+#head-r i{ 
+  color:rgb(181, 178, 178); 
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#head-r i:hover{
+  color:whitesmoke;
+  font-size: 1.65vw;
+  font-size: 1.65vw;
+  transition: 0.2s;
+  background-color: #765578;
+  border-radius: 5px;
+  padding: 0.15vw;
+}
+#nav-top {
+  width: 4vw;
+  height: 60vh;
+  margin-left: 0.2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vh 0;
+}
+
+.nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: dis2;
+  position: relative;
+}
+
+.nav input {
+  display: none; /* Hide the radio buttons */
+}
+
+/* Default icon styling */
+.nav i {
+  font-size: 1.8vw;
+  color: whitesmoke;
+  padding: 0.3vw; /* Default padding */
+  border-radius: 10px;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* Default text styling */
+.nav h3 {
+  font-size: 0.65vw;
+  color: whitesmoke;
+  margin-top: 0.3vh;
+  font-weight: 500;
+}
+
+/* Hide filled icon by default */
+.nav i.fill {
+  display: none;
+}
+
+/* When clicked, hide the outline icon */
+.nav input:checked + i.line {
+  display: none;
+}
+
+/* When clicked, show the filled icon */
+.nav input:checked + i + i.fill {
+  display: inline;
+}
+
+/* Background effect for icon when clicked */
+.nav input:checked + i + i.fill,
+.nav input:checked + i {
+  background-color: #765578;
+  padding: 0.45vw; /* Increase padding */
+  border-radius: 10px;
+}
+
+/* Background effect for icon when hovered */
+.nav:hover i {
+  background-color: #765578;
+  padding: 0.55vw; /* Increase padding */
+  border-radius: 10px;
+}
+
+/* Change text color when selected */
+.nav input:checked ~ h3 {
+  color: whitesmoke;
+}
+
+#nav-bottom{
+  width:4vw;
+  height:18vh;
+  margin-left:0.2vw;
+  margin-top:5vw; 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;  
+}
+.add{
+  width:6vh;
+  height:6vh;
+  background-color: #765578;
+  border:1px solid #967398;
+  border-radius: 50%;
+  color:whitesmoke;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add:hover{
+  width:6.5vh;
+  height:6.5vh;
+  transition: 0.2s;
+}
+.user {
+  width: 6vh;
+  height: 6vh;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-family: dis1;
+  color: whitesmoke;
+  position: relative; /* Required for absolute positioning of the online status */
+}
+
+/* Online status indicator */
+.user::after {
+  content: "";
+  width: 1.5vh; /* Size of the online dot */
+  height: 1.5vh;
+  background-color: green;
+  border-radius: 50%; /* Makes it a circle */
+  position: absolute;
+  bottom: -0.3vh;
+  right: -0.3vh;
+  border: 2px solid white; /* White border for better visibility */
+}
+#box-l{
+  width:30vw;
+  height:100%; 
+}
+#bl-top {
+    height: 7vw;
+    width: 100%;
+}
+
+.bltop {
+    height: 3.5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: dis1;
+    font-size: 1.15vw;
+    padding-left: 2vw;
+    margin-left: 0.25vw;
+    display: flex;
+    align-items: center;    
+    border-bottom: 1px solid #7f4f82;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bltop input {
+    display: none; /* Hide the radio buttons */
+}
+
+.bltop i {
+    font-size: 2vw;
+    transition: color 0.3s ease;
+}
+
+.bltop i.fill {
+    display: none; /* Hide filled icon by default */
+}
+
+.bltop input:checked + i.line {
+    display: none; /* Hide line icon when selected */
+}
+
+.bltop input:checked + i + i.fill {
+    display: inline; /* Show filled icon when selected */
+}
+
+.bltop input:checked ~ h3 {
+    color: #7f4f82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    /* Change text color when selected */
+}
+
+.bltop input:checked ~ i {
+  background-color: whitesmoke; /* Change background when selected */
+    padding: 0.15vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: 0.2s ease-in-out;      
+    height:2vw;
+    width:2vw;
+    color: #7f4f82; 
+}
+
+.bltop input:checked ~ h3 {
+  
+    background-color: whitesmoke; /* Change background when selected */
+    padding: 0.15vw;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease-in-out;
+    height:2vw;
+    width:10vw;
+}
+#bl-bottom{
+  height:30vw;
+  width:100%;  
+}
+.blb-head{
+  width:100%;
+  font-family: dis1;
+  font-size: 1.15vw;
+  color: whitesmoke;
+  padding-left: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.msg1,.msg2 {
+  height: 7.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  padding-left: 2vw;
+  margin-bottom: 1vw;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 1px solid #7f4f82;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.msg1 img, .msg2 img {
+  height: 2.5vw;
+  width: 2.5vw;
+  transform: translateX(-1vw);
+  border-radius: 50%;
+}
+.msg1 h3,.msg2 h3{
+  font-family:ab;
+  font-weight: 500;
+  font-size: 1.15vw;
+  color: whitesmoke; 
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: -0.6vw;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+}
+
+.online {
+  background-color: green;
+}
+
+.offline {
+  background-color: gray;
+}
+
+#box-r{
+  width:70vw;
+  height:100%;
+  background-color: whitesmoke;
+  position: relative;
+}
+#br-top{
+  width:100%;
+  height:4vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: dis2;
+  font-size:2.5vw;
+  padding-left:2vw;
+  background: rgb(161,168,166);
+background: linear-gradient(90deg, rgba(161,168,166,1) 0%, rgba(245,245,245,1) 40%);
+}
+#br-back #img1{
+  height:18vw;
+  width:66.5vw;
+  object-fit: cover;
+}
+#br-back #img2{
+ position: absolute;
+ height:6vw;
+ width:22vw;
+ top:8vw;
+ left:1vw;
+}
+#br-back::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 66.5vw;  
+  height: 40vw; 
+  background: linear-gradient(to top, #EDEDED 30%, rgba(237, 237, 237, 0) 100%);
+  pointer-events: none; 
+}
+#box-pro{
+  width:100%;
+  height:60%;  
+  position: absolute;
+  bottom:0;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box1{
+  height:22vw;
+  width:15vw;
+  background: rgb(191,186,186);
+  background: linear-gradient(0deg, rgba(191,186,186,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.box2{
+  height:22vw;
+  width:16vw;
+  background: rgb(191,186,186);
+  background: linear-gradient(0deg, rgba(191,186,186,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.box3{
+  height:22vw;
+  width:16vw;
+  background: rgb(191,186,186);
+  background: linear-gradient(0deg, rgba(191,186,186,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.box4{
+  height:22vw;
+  width:16vw;
+  background: rgb(191,186,186);
+  background: linear-gradient(0deg, rgba(191,186,186,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.box1-top{
+  height:16vw;
+  width:100%;    
+  position: relative;
+}
+.box1-top #i1{
+  height:-1vw;
+  width:16vw;
+  transform: translateX(-1vw);
+  object-fit: cover;
+}
+.box1-top #i2 {
+  height: 19vw;
+  width: 16vw;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;  /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box1:hover #i2 {
+  opacity: 1;  /* Appears on hover */
+}
+.box1-bottom{
+  height:6vw;
+  width:16vw;
+  background-color: #765578;
+  position:absolute;
+  z-index: 3;
+  bottom:0;
+}
+
